@@ -32,16 +32,16 @@ int isAtBorder(int coord, int offset, int size) {
 
 void squares(int size1, int x_offset, int y_offset, int size2) {
   //compute the max of size1 and (x_offset + size2).  Call this w
-  int w;
+  int h,w;
   if(size1>(x_offset+size2)){
     w = size1;
   }
   else w = (x_offset + size2);
 
   if(size1>(y_offset+size2)){
-    w = size1;
+    h = size1;
   }
-  else w = (y_offset + size2);
+  else h = (y_offset + size2);
   
 
 
@@ -50,19 +50,19 @@ void squares(int size1, int x_offset, int y_offset, int size2) {
   //count from 0 to h. Call the number you count with y
     //count from 0 to w. Call the number you count with x
   
-  int x, y, h;
+  int x,y;
   for(y=0;y<=h;y++){
     for(x=0;x<=w;x++){
-      if(((x>x_offset && x<(x_offset+size2)) && (y==y_offset||y==(y_offset + size2 -1 )))||((y>y_offset && y<(y_offset+size2))&&(x==x_offset||x==(x_offset+size2-1)))){
+  if(((x>x_offset && x<(x_offset+size2)) && (y==y_offset||y==(y_offset + size2 -1 )))||((y>y_offset && y<(y_offset+size2))&&(x==x_offset||x==(x_offset+size2-1)))){
       printf("*");
-      }
-      else if(((x<size1)&&(y==0 || y==(size1-1)))||((y<size1)&&(x==0 || x==(size1-1)))){
+  }
+  else if(((x<size1)&&(y==0 || y==(size1-1)))||((y<size1)&&(x==0 || x==(size1-1)))){
 	printf("#");
- }
-      else
-	printf(" ");
+  }
+  else
+    printf(" ");
 
-    }
+   }
   printf("\n");
   }
 }
@@ -83,6 +83,4 @@ void squares(int size1, int x_offset, int y_offset, int size2) {
 
       //else print a space
     //when you finish counting x from 0 to w, 
-    //print a newline
-
-
+    //print a newline 
