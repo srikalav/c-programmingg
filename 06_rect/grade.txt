@@ -1,35 +1,13 @@
-Grading at Tue Apr 28 17:23:33 UTC 2020
+Grading at Tue Apr 28 18:06:12 UTC 2020
 Attempting to compile rectangle.c
 Tring to run rectangle
-Line_3_did_not_match
-Line_7_did_not_match
-Line_11_did_not_match
-Line_13_did_not_match
-Line_14_did_not_match
-Line_15_did_not_match
-Line_16_did_not_match
-Line_19_did_not_match
-Your file did not match the expected ouput
-Your output did not match what we expected. Here is what you printed
-r1 is (2,3) to (7,9)
-r2 is (-1,-2) to (4,5)
-r3 is (-2,7) to (5,17)
-r4 is (-4,7) to (0,9)
-Intersection(r1,r1): (2,3) to (7,9)
-Intersection(r1,r2): (2,3) to (4,5)
-Intersection(r1,r3): (2,7) to (5,9)
-Intersection(r1,r4): <empty>
-Intersection(r2,r1): (2,3) to (4,5)
-Intersection(r2,r2): (-1,-2) to (4,5)
-Intersection(r2,r3): <empty>
-Intersection(r2,r4): <empty>
-Intersection(r3,r1): (2,7) to (5,9)
-Intersection(r3,r2): <empty>
-Intersection(r3,r3): (-2,7) to (5,17)
-Intersection(r3,r4): (-2,7) to (0,9)
-Intersection(r4,r1): <empty>
-Intersection(r4,r2): <empty>
-Intersection(r4,r3): (-2,7) to (0,9)
-Intersection(r4,r4): (-4,7) to (0,9)
+Your file matched the expected output
+removing your main() and replacing it with out own to run more tests...
+temp2.c: In function ‘main’:
+temp2.c:208:3: error: implicit declaration of function ‘printRectangle’ [-Werror=implicit-function-declaration]
+   printRectangle(i);
+   ^
+cc1: all warnings being treated as errors
+Could not replace your main function to test further
 
 Overall Grade: F
