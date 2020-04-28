@@ -94,7 +94,7 @@ int main(){
   r3.x = -2;
   r3.y = 7;
   r3.width = 7;
-  r3.height = 10;
+  r3.height = -10;
   printf("r3 is ");
   print(r3);
 
