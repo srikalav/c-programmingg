@@ -61,7 +61,7 @@ rectangle intersection(rectangle r1, rectangle r2){
 }
 
 
-void print(rectangle r){
+void printRectangle(rectangle r){
   r = canonicalize(r);
   if(r.width == 0 && r.height == 0){
     printf("<empty>\n");
@@ -82,40 +82,40 @@ int main(){
   r1.width = 5;
   r1.height = 6;
   printf("r1 is ");
-  print(r1);
+  printRectangle(r1);
 
   r2.x = 4;
   r2.y = 5;
   r2.width = -5;
   r2.height = -7;
   printf("r2 is ");
-  print(r2);
+  printRectangle(r2);
 
   r3.x = -2;
   r3.y = 7;
   r3.width = 7;
   r3.height = -10;
   printf("r3 is ");
-  print(r3);
+  printRectangle(r3);
 
   r4.x = 0;
   r4.y = 7;
   r4.width = -4;
   r4.height = 2;
   printf("r4 is ");
-  print(r4);
+  printRectangle(r4);
 
    
   rectangle i = intersection(r1,r1);
   printf("Intersection(r1,r1): ");
-  print(i);
+  printRectangle(i);
   
   
   i = intersection(r1,r2);
   printf("Intersection(r1,r2): ");
-  print(i);
+  printRectangle(i);
   
-
+#define print printRectangle
   i = intersection(r1,r3);
   printf("Intersection(r1,r3): ");
   print(i);
