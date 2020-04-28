@@ -1,13 +1,13 @@
-Grading at Tue Apr 28 18:06:12 UTC 2020
+Grading at Tue Apr 28 18:11:53 UTC 2020
 Attempting to compile rectangle.c
 Tring to run rectangle
 Your file matched the expected output
 removing your main() and replacing it with out own to run more tests...
-temp2.c: In function ‘main’:
-temp2.c:208:3: error: implicit declaration of function ‘printRectangle’ [-Werror=implicit-function-declaration]
-   printRectangle(i);
-   ^
-cc1: all warnings being treated as errors
-Could not replace your main function to test further
+#################################################
+testcase1:
+testcase1 passed
+#################################################
+testcase2:
+testcase2 passed
 
-Overall Grade: F
+Overall Grade: A
