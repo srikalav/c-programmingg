@@ -10,7 +10,7 @@ struct _retire_info {
 typedef struct _retire_info retire_info;
 
 double balance_calc(double balance, retire_info retire_stats){
-  balance += (balance * (retire_stats.rate_of_return*)*100);
+  balance += (balance * (retire_stats.rate_of_return*))/1200;
   balance += retire_stats.contribution;
 
   return balance;
