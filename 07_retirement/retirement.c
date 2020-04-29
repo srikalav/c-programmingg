@@ -34,13 +34,12 @@ void retirement(int startAge, double initial, retire_info working, retire_info r
     balance = balance_calc(balance, working);
   }
 
-  for(j=0; j< retired.months; j++){
-    total_months+=1;
+  for(j = 0; j < retired.months; j++){
+    total_months += 1;
     print_monthly_info(total_months, balance);
     balance = balance_calc(balance,retired);
   }
 
-  return;
 
 }
 
@@ -55,9 +54,9 @@ int main(){
   retired.contribution = -4000;
   retired.rate_of_return = 0.01/12.0;
 
-  retirement(327, 21345, working,retired);
+  retirement(327, 21345,working,retired);
 
   return 0;
-
 }
+
 
