@@ -10,7 +10,7 @@ struct _retire_info {
 typedef struct _retire_info retire_info;
 
 void print_monthly_info(int months, double balance){
-  printf("Age %3d month %2d you have $%.21f\n", months/12, months%12, balance);
+  printf("Age %3d month %2d you have $%.2lf\n", months/12, months%12, balance);
 
   return;
 }
