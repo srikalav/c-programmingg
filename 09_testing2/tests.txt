@@ -7,6 +7,7 @@ aaaa bbbbb
 aaaaa bbbbbb
 aaaaaa bbbbb
 bbbba bbbba
+bbbbb
 ***** #####
 ----- _____
 bbbcc bbbaa
@@ -23,3 +24,5 @@ aaaab bbbbc
 aaabc aaaca
 aaaab bcccc cccab
 aaaab bbbcc ddddd
+""""" '''''
+||||| #####
