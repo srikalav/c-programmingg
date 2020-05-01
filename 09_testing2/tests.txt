@@ -1,0 +1,28 @@
+aaaaa bbbbb
+aaaaa bbbbc
+aaabb bbbbc
+bbbbb bbbbb
+aaaaa bbbb
+aaaa bbbbb
+aaaaa bbbbbb
+aaaaaa bbbbb
+bbbba bbbba
+bbbbb
+***** #####
+----- _____
+bbbcc bbbaa
+bbbca bbbcc
+abbbb abbbb
+aabbb acbbb
+#$&%^ ^*$&%
+01234 01234
+(*&&% 01234
+NMSSJ 00000
+$$$$$ |||||
+
+aaaab bbbbc
+aaabc aaaca
+aaaab bcccc cccab
+aaaab bbbcc ddddd
+""""" ;;;;;
+""""" '''''
