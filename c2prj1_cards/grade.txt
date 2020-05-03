@@ -1,0 +1,52 @@
+Grading at Sun May  3 17:44:34 UTC 2020
+Compiling cards.c
+In file included from cards.c:2:0:
+cards.c: In function ‘assert_card_valid’:
+cards.c:9:28: error: expected ‘)’ before numeric constant
+   assert(c.suit  >= SPADES 7& c.suit <= CLUBS);
+                            ^
+cards.c: In function ‘ranking_to_string’:
+cards.c:23:29: error: expected ‘;’ before ‘break’
+   case PAIR : return "PAIR" break;
+                             ^
+cards.c: In function ‘value_letter’:
+cards.c:38:20: error: multi-character character constant [-Werror=multichar]
+   case 10 : return '10'; break;
+                    ^
+cards.c:38:20: error: overflow in implicit constant conversion [-Werror=overflow]
+cards.c: In function ‘card_from_letters’:
+cards.c:86:10: error: expected ‘(’ before ‘suit_let’
+   switch suit_let){
+          ^
+cards.c:86:10: error: statement with no effect [-Werror=unused-value]
+cards.c:86:18: error: expected statement before ‘)’ token
+   switch suit_let){
+                  ^
+cards.c:87:4: error: case label not within a switch statement
+    case 's' : temp.value = SPADES; break;
+    ^
+cards.c:87:36: error: break statement not within loop or switch
+    case 's' : temp.value = SPADES; break;
+                                    ^
+cards.c:88:6: error: case label not within a switch statement
+      case 'h' : temp.value = HEARTS; break;
+      ^
+cards.c:88:38: error: break statement not within loop or switch
+      case 'h' : temp.value = HEARTS; break;
+                                      ^
+cards.c:89:8: error: case label not within a switch statement
+        case 'd' : temp.value = DIAMONDS; break;
+        ^
+cards.c:89:42: error: break statement not within loop or switch
+        case 'd' : temp.value = DIAMONDS; break;
+                                          ^
+cards.c:90:3: error: case label not within a switch statement
+   case 'c' : temp.value = CLUBS; break;
+   ^
+cards.c:90:34: error: break statement not within loop or switch
+   case 'c' : temp.value = CLUBS; break;
+                                  ^
+cc1: all warnings being treated as errors
+Could not compile your card.c!
+
+Overall Grade: FAILED
