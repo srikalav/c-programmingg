@@ -6,7 +6,7 @@
 
 void assert_card_valid(card_t c) {
   assert(c.value >=2 && c.value <= VALUE_ACE);
-  assert(c.suit  >= SPADES 7& c.suit <= CLUBS);
+  assert(c.suit  >= SPADES && c.suit <= CLUBS);
   return;
 }
 
@@ -20,7 +20,7 @@ const char * ranking_to_string(hand_ranking_t r) {
   case STRAIGHT : return "STRAIGHT"; break;
   case THREE_OF_A_KIND : return "THREE_OF_A_KIND"; break;
   case TWO_PAIR : return "TWO_PAIR"; break;
-  case PAIR : return "PAIR" break;
+  case PAIR : return "PAIR"; break;
   default : return "???"; break;
   }
 }
@@ -35,7 +35,7 @@ char value_letter(card_t c) {
 	  case 7 : return '7'; break;
 	    case 8 : return '8'; break;
 	      case 9 : return '9'; break;
-		case 10 : return '10'; break;
+		case 0 : return '0'; break;
 		  case VALUE_JACK : return 'J'; break;
 		    case VALUE_QUEEN : return 'Q'; break;
 		      case VALUE_KING : return 'K'; break;
@@ -83,7 +83,7 @@ card_t card_from_letters(char value_let, char suit_let) {
 		  case 'A' : temp.value = VALUE_ACE; break;
     
 }
-  switch suit_let){
+  switch (suit_let){
    case 's' : temp.value = SPADES; break;
      case 'h' : temp.value = HEARTS; break;
        case 'd' : temp.value = DIAMONDS; break;
