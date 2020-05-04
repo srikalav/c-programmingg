@@ -97,6 +97,5 @@ card_t card_from_num(unsigned c) {
   card_t temp;
   temp.value = (c/4)  +2;
   temp.suit = c%4;
-  printf("t: %d %d \n", temp.value, temp.suit);
   return temp;
 }
