@@ -5,8 +5,8 @@
 
 
 void assert_card_valid(card_t c) {
-  assert(c.value >=2 && c.value <= VALUE_ACE);
-  assert(c.suit  >= SPADES && c.suit <= CLUBS);
+  assert(c.value >= 2 && c.value <= VALUE_ACE);
+  assert(c.suit >= SPADES && c.suit <= CLUBS);
   return;
 }
 
@@ -35,7 +35,7 @@ char value_letter(card_t c) {
 	  case 7 : return '7'; break;
 	    case 8 : return '8'; break;
 	      case 9 : return '9'; break;
-		case 0 : return '0'; break;
+		case 10 : return '0'; break;
 		  case VALUE_JACK : return 'J'; break;
 		    case VALUE_QUEEN : return 'Q'; break;
 		      case VALUE_KING : return 'K'; break;
@@ -61,7 +61,7 @@ char suit_letter(card_t c) {
 void print_card(card_t c) {
   char val = value_letter(c);
   char suit  = suit_letter(c);
-  printf("%c %c",val,suit);
+  printf("%c%c",val,suit);
   return;
 }
 
@@ -83,11 +83,11 @@ card_t card_from_letters(char value_let, char suit_let) {
 		  case 'A' : temp.value = VALUE_ACE; break;
     
 }
-  switch (suit_let){
-   case 's' : temp.value = SPADES; break;
-     case 'h' : temp.value = HEARTS; break;
-       case 'd' : temp.value = DIAMONDS; break;
-	 case 'c' : temp.value = CLUBS; break;
+  switch(suit_let){
+   case 's' : temp.suit = SPADES; break;
+     case 'h' : temp.suit = HEARTS; break;
+       case 'd' : temp.suit = DIAMONDS; break;
+	 case 'c' : temp.suit = CLUBS; break;
   }
 assert_card_valid(temp);
 return temp;
@@ -97,5 +97,6 @@ card_t card_from_num(unsigned c) {
   card_t temp;
   temp.value = (c/4)  +2;
   temp.suit = c%4;
+  printf("t: %d %d \n", temp.value, temp.suit);
   return temp;
 }
