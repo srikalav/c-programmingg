@@ -1,8 +1,117 @@
-Grading at Sun May  3 18:29:41 UTC 2020
+Grading at Mon May  4 20:20:04 UTC 2020
 Compiling cards.c
 Testing card_from_letters
-For card_from_letters('0','c'), I expected 0c but got 3s
-For card_from_letters('0','d'), I expected 0d but got 2s
-Failed
+Passed
+Testing value_letter and suit_letter
+Passed
+Testing print_card
+Passed
+Testing card_from_num
+When I use card_from_num on numbers 0<= i < 52
+I expect to see each card exactly once, but I see:
+t: 2 0 
+2s
+t: 2 1 
+2h
+t: 2 2 
+2d
+t: 2 3 
+2c
+t: 3 0 
+3s
+t: 3 1 
+3h
+t: 3 2 
+3d
+t: 3 3 
+3c
+t: 4 0 
+4s
+t: 4 1 
+4h
+t: 4 2 
+4d
+t: 4 3 
+4c
+t: 5 0 
+5s
+t: 5 1 
+5h
+t: 5 2 
+5d
+t: 5 3 
+5c
+t: 6 0 
+6s
+t: 6 1 
+6h
+t: 6 2 
+6d
+t: 6 3 
+6c
+t: 7 0 
+7s
+t: 7 1 
+7h
+t: 7 2 
+7d
+t: 7 3 
+7c
+t: 8 0 
+8s
+t: 8 1 
+8h
+t: 8 2 
+8d
+t: 8 3 
+8c
+t: 9 0 
+9s
+t: 9 1 
+9h
+t: 9 2 
+9d
+t: 9 3 
+9c
+t: 10 0 
+0s
+t: 10 1 
+0h
+t: 10 2 
+0d
+t: 10 3 
+0c
+t: 11 0 
+Js
+t: 11 1 
+Jh
+t: 11 2 
+Jd
+t: 11 3 
+Jc
+t: 12 0 
+Qs
+t: 12 1 
+Qh
+t: 12 2 
+Qd
+t: 12 3 
+Qc
+t: 13 0 
+Ks
+t: 13 1 
+Kh
+t: 13 2 
+Kd
+t: 13 3 
+Kc
+t: 14 0 
+As
+t: 14 1 
+Ah
+t: 14 2 
+Ad
+t: 14 3 
+Ac
 
 Overall Grade: FAILED
